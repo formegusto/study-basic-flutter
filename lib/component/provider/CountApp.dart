@@ -9,7 +9,9 @@ class CountApp extends StatelessWidget {
     // TODO: implement build
     return ChangeNotifierProvider<CountProvider>(
       create: (_) => CountProvider(0),
-      child: CountPage(),
+      child: MaterialApp(
+        home: CountPage(),
+      ),
     );
   }
 }
